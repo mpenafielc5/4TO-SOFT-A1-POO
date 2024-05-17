@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimiento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../maxresdefault.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Para cubrir toda la ventana */
+            background-position: center; /* Para centrar la imagen */
+            background-repeat: no-repeat; /* Para que la imagen no se repita */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white; /* Color de texto */
+            position: relative; /* Para que el contenido ::before sea relativo a este elemento */
+        }
+
+        /* Aplicar desenfoque al fondo */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./maxresdefault.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Para cubrir toda la ventana */
+            background-position: center; /* Para centrar la imagen */
+            background-repeat: no-repeat; /* Para que la imagen no se repita */
+            filter: blur(10px); /* Aplicar desenfoque */
+            z-index: -1; /* Colocar detrás del contenido */
+        }
+
+        .container {
+            text-align: center;
+            position: relative; /* Asegurar que el contenido se muestre sobre la capa ::before */
+            z-index: 1; /* Para asegurar que el contenido esté sobre la capa ::before */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .credits {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .credits ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .credits ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Gracias por usar nuestro sistema!</h1>
+        <p>Esperamos que haya sido una experiencia positiva para ti.</p>
+        <div class="credits">
+            <p>Asignatura: Programación Orientada a Objetos</p>
+            <p>Docente: Daniel Alexander Vera Paredes</p>
+            <p>Estudiantes:</p>
+            <ul>
+                <li>Alberto Carlos Rodríguez Zambrano</li>
+                <li>Jackson Enrique Reyes Ibarra</li>
+                <li>Miguel Ángel Peñafiel Cadena</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Factura</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>Consultar Factura</h1>
+
+    <label for="selectFactura">Selecciona un número de factura:</label>
+    <select id="selectFactura"></select><br>
+
+    <button id="btnConsultarFactura">Consultar Factura</button><br>
+
+    <div id="facturaInfo" style="display:none;">
+        <h2>Detalle de Factura</h2>
+        <p>Factura N°: <span id="facturaNumero"></span></p>
+        <p>Cliente: <span id="facturaCliente"></span></p>
+        <p>Fecha: <span id="facturaFecha"></span></p>
+        <ul id="facturaDetalle"></ul>
+        <p>Subtotal: <span id="facturaSubtotal"></span></p>
+        <p>Descuento: <span id="facturaDescuento"></span></p>
+        <p>IVA (12%): <span id="facturaIVA"></span></p>
+        <p>Total: <span id="facturaTotal"></span></p>
+    </div>
+
+    <!-- Script para la lógica JavaScript -->
+    <script src="consulta.js"></script>
+</body>
+</html>

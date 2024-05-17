@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de Productos</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>Creación de Productos</h1>
+    <form id="creacionProductosForm">
+        <label for="descripcion">Descripción:</label><br>
+        <input type="text" id="descripcion" required><br>
+        
+        <label for="precio">Precio:</label><br>
+        <input type="number" id="precio" step="0.01" required><br>
+        
+        <label for="stock">Stock:</label><br>
+        <input type="number" id="stock" required><br>
+        
+        <button type="submit">Crear Producto</button>
+    </form>
+
+    <!-- Script para la lógica JavaScript -->
+    <script src="creacion.js"></script>
+</body>
+</html>

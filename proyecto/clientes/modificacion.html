@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificación de Clientes</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h2>Modificación de Clientes</h2>
+    
+    <form id="modificacionForm">
+        <label for="modificacionCedula">Ingrese la cédula del cliente a modificar:</label>
+        <input type="text" id="modificacionCedula" name="modificacionCedula" required><br>
+
+        <button type="submit">Buscar Cliente</button>
+    </form>
+
+    <div id="formularioModificacion" style="display: none;">
+        <h3>Modificar Cliente</h3>
+        <form id="formularioModificar">
+            <label for="modificacionNombre">Nombre:</label>
+            <input type="text" id="modificacionNombre" name="modificacionNombre" required><br>
+
+            <label for="modificacionApellido">Apellido:</label>
+            <input type="text" id="modificacionApellido" name="modificacionApellido" required><br>
+
+            <label for="modificacionTipoCliente">Tipo de Cliente:</label>
+            <input type="radio" id="modificacionRegular" name="modificacionTipoCliente" value="regular" required>
+            <label for="modificacionRegular">Regular</label>
+            <input type="radio" id="modificacionVip" name="modificacionTipoCliente" value="vip">
+            <label for="modificacionVip">VIP</label><br>
+
+            <label for="modificacionTarjeta">Tiene Tarjeta:</label>
+            <input type="radio" id="modificacionSi" name="modificacionTarjeta" value="si" required>
+            <label for="modificacionSi">Sí</label>
+            <input type="radio" id="modificacionNo" name="modificacionTarjeta" value="no">
+            <label for="modificacionNo">No</label><br>
+
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </div>
+
+    <div id="resultadoModificacion"></div>
+
+    <!-- Enlazar archivo JavaScript -->
+    <script src="modificacion.js"></script>
+</body>
+</html>

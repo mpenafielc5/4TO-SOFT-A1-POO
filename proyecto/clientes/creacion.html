@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de Clientes</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h2>Creación de Clientes</h2>
+    
+    <form id="clienteForm">
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="tipoCliente">Tipo de Cliente:</label>
+        <input type="radio" id="regular" name="tipoCliente" value="regular" required>
+        <label for="regular">Regular</label>
+        <input type="radio" id="vip" name="tipoCliente" value="vip">
+        <label for="vip">VIP</label><br>
+
+        <label for="tarjeta">Tiene Tarjeta:</label>
+        <input type="radio" id="si" name="tarjeta" value="si" required>
+        <label for="si">Sí</label>
+        <input type="radio" id="no" name="tarjeta" value="no">
+        <label for="no">No</label><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Enlazar archivos JavaScript -->
+    <script src="creacion.js"></script>
+    
+</body>
+</html>
